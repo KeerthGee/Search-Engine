@@ -1,0 +1,24 @@
+PyPDF2: Used to read and extract text from PDF files.
+tkinter: A Python library used to create graphical user interfaces (GUI).
+filedialog: A module from tkinter that allows you to open a file dialog to select files.
+messagebox: Displays error or information messages in a popup window.
+
+ GUI Setup:
+
+root = tk.Tk()
+root.title("PDF Search Tool")
+root.geometry("600x400")
+This initializes the main window of the GUI with the title "PDF Search Tool" and sets its size to 600x400 pixels.
+
+
+
+Imports: Uses PyPDF2 for reading PDFs and tkinter for creating the graphical user interface (GUI).
+search_in_pdf: Extracts text from each page of the PDF, counts total words, and searches for the specified word. It returns the total word count and the number of occurrences of the word in each page.
+browse_file: Opens a file dialog to allow the user to select a PDF file.
+search_word: Retrieves the file path and word, calls search_in_pdf, and displays the result in the GUI.
+GUI: Contains:
+A button to browse and select a PDF file.
+A field to enter the word to search.
+A button to start the search.
+A text box to display the results.
+The program displays the total word count and the number of times the search word appears in the PDF.
